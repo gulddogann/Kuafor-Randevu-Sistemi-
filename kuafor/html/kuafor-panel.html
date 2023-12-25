@@ -10,8 +10,8 @@
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-    <script src="js/kuafor.js"></script>
-    <link rel="stylesheet" href="css/kuafor.css">
+    <script src="kuafor.js"></script>
+    <link rel="stylesheet" href="kuafor.css">
 
     <title>Kuaför Paneli</title>
 </head>
@@ -20,55 +20,31 @@
     <div class="container">
         <h1 class="mt-5">Kuaför Paneli</h1>
 
+        <!-- İçerik -->
         <div class="row mt-5">
             <div class="col-md-4">
                 <div class="panel panel-default">
                     <div class="panel-heading">
                         <h2>Çalışma Saatlerini Tanımla</h2>
                     </div>
-                    <form class="calismaSaatleriForm">
+                    <form id="calismaSaatleriForm">
                         <div class="form-group">
                             <label for="ad">Ad:</label>
-                            <input type="text" class="form-control" placeholder="Adınızı girin">
+                            <input type="text" class="form-control" id="ad" placeholder="Adınızı girin">
                         </div>
                         <div class="form-group">
-                            <label>Çalışma Günleri:</label>
-                            <div class="form-check">
-                                <input class="form-check-input" type="checkbox" value="pazartesi" id="pazartesi">
-                                <label class="form-check-label" for="pazartesi">Pazartesi</label>
-                            </div>
-                            <div class="form-check">
-                                <input class="form-check-input" type="checkbox" value="salı" id="salı">
-                                <label class="form-check-label" for="salı">Salı</label>
-                            </div>
-                            <div class="form-check">
-                                <input class="form-check-input" type="checkbox" value="çarşamba" id="çarşamba">
-                                <label class="form-check-label" for="çarşamba">Çarşamba</label>
-                            </div>
-                            <div class="form-check">
-                                <input class="form-check-input" type="checkbox" value="perşembe" id="perşembe">
-                                <label class="form-check-label" for="perşembe">Perşembe</label>
-                            </div>
-                            <div class="form-check">
-                                <input class="form-check-input" type="checkbox" value="cuma" id="cuma">
-                                <label class="form-check-label" for="cuma">Cuma</label>
-                            </div>
-                            <div class="form-check">
-                                <input class="form-check-input" type="checkbox" value="cumartesi" id="cumartesi">
-                                <label class="form-check-label" for="cumartesi">Cumartesi</label>
-                            </div>
-                            <div class="form-check">
-                                <input class="form-check-input" type="checkbox" value="pazar" id="pazar">
-                                <label class="form-check-label" for="pazar">Pazar</label>
-                            </div>
+                            <label for="calismaGunleri">Çalışma Günleri:</label>
+                            <input type="date" class="form-control" id="calismaGunleri"
+                                placeholder="Çalışma günlerini girin">
                         </div>
                         <div class="form-group">
                             <label for="baslangicSaat">Başlangıç Saati:</label>
-                            <input type="time" class="form-control" placeholder="Başlangıç saatini girin">
+                            <input type="time" class="form-control" id="baslangicSaat"
+                                placeholder="Başlangıç saatini girin">
                         </div>
                         <div class="form-group">
                             <label for="bitisSaat">Bitiş Saati:</label>
-                            <input type="time" class="form-control" placeholder="Bitiş saatini girin">
+                            <input type="time" class="form-control" id="bitisSaat" placeholder="Bitiş saatini girin">
                         </div>
                         <button type="submit" class="btn btn-primary">Çalışma Saatlerini Kaydet</button>
                     </form>
@@ -80,7 +56,7 @@
                     <div class="panel-heading">
                         <h2>Randevu İstekleri</h2>
                     </div>
-                    <ul class="list-group randevuIstekleri">
+                    <ul id="randevuIstekleri" class="list-group">
                         <li class="list-group-item">
                             Randevu 3
                             <span class="float-right">
@@ -104,7 +80,7 @@
                     <div class="panel-heading">
                         <h2>Onaylanan Randevular</h2>
                     </div>
-                    <ul class="list-group onaylananRandevular">
+                    <ul id="onaylananRandevular" class="list-group">
                         <li class="list-group-item">
                             Randevu 1
                         </li>
