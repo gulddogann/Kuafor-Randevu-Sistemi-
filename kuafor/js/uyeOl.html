@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="uyeOl.js"></script>
+    <link rel="stylesheet" href="uyeOl.css">
+    <title>Üye Ol</title>
+</head>
+<div class="app-container">
+    <form class="registration-form" onsubmit="handleSubmit(event)">
+        <h2>Üye Ol</h2>
+        <label>
+            Ad:
+            <input type="text" name="firstName" required />
+        </label>
+        <label>
+            Soyad:
+            <input type="text" name="lastName" required />
+        </label>
+        <label>
+            E-posta:
+            <input type="email" name="email" required />
+        </label>
+        <label>
+            Şifre:
+            <input type="password" name="password" required />
+        </label>
+        <button type="submit">Üye Ol</button>
+    </form>
+</div>
+</html>

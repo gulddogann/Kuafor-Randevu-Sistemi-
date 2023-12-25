@@ -1,0 +1,43 @@
+body {
+    background-color: #343a40;
+    color: #ffffff;
+}
+
+.jumbotron {
+    background-color: #343a40;
+    color: #eee;
+}
+
+.panel {
+    background-color: #343a40;
+    color: #eee;
+}
+
+.table {
+    background-color: #343a40;
+    color: #000000;
+}
+
+.panel-heading {
+    background-color: #343a40;
+    color: white;
+}
+
+h2 {
+    font-size: 24px;
+    color: #ffffff;
+}
+
+.list-group-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffffff;
+    border: 1px solid #dee2e6;
+    margin-bottom: 5px;
+    color: #000000;
+}
+
+.list-group-item .actions button {
+    margin-left: 5px;
+}

@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js"></script>
+    <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/locales/bootstrap-datepicker.tr.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="admin.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker.min.css">
+    <link rel="stylesheet" href="admin.css">
+
+
+    <title>Admin Paneli</title>
+</head>
+
+<div class="container">
+    <div class="jumbotron mt-5">
+        <h2>Admin Paneli</h2>
+
+        <!-- Yeni Kuaför Ekleme -->
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h5>Yeni Kuaför Ekle</h5>
+            </div>
+            <form>
+                <div class="form-group">
+                    <label for="kuaförAdı">Kuaför Adı:</label>
+                    <input type="text" class="form-control" id="kuaförAdı" placeholder="Adı Soyadı">
+                </div>
+                <div class="form-group">
+                    <label for="doğumTarihi">Doğum Tarihi:</label>
+                    <input type="text" class="form-control" id="doğumTarihi" placeholder="Doğum tarihi">
+                </div>
+                <div class="form-group">
+                    <label for="eğitimSeviyesi">Eğitim Seviyesi:</label>
+                    <select class="form-control" id="eğitimSeviyesi">
+                        <option value="İlkokul"></option>
+                        <option value="İlkokul">İlkokul</option>
+                        <option value="Ortaokul">Ortaokul</option>
+                        <option value="Lise">Lise</option>
+                        <option value="Üniversite">Üniversite</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="telefonNumarası">Telefon Numarası:</label>
+                    <input type="tel" class="form-control" id="telefonNumarası" placeholder="Telefon Numarası">
+                </div>
+                <div class="form-group">
+                    <label for="adres">Adres:</label>
+                    <input type="text" class="form-control" id="adres" placeholder="Adres">
+                </div>
+                <div class="form-group">
+                    <label>Çalışma Günleri:</label>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="pazartesi" id="pazartesi">
+                        <label class="form-check-label" for="pazartesi">Pazartesi</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="salı" id="salı">
+                        <label class="form-check-label" for="salı">Salı</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="çarşamba" id="çarşamba">
+                        <label class="form-check-label" for="çarşamba">Çarşamba</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="perşembe" id="perşembe">
+                        <label class="form-check-label" for="perşembe">Perşembe</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="cuma" id="cuma">
+                        <label class="form-check-label" for="cuma">Cuma</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="cumartesi" id="cumartesi">
+                        <label class="form-check-label" for="cumartesi">Cumartesi</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="pazar" id="pazar">
+                        <label class="form-check-label" for="pazar">Pazar</label>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="baslangicSaat">Başlangıç Saati:</label>
+                    <input type="time" class="form-control" id="baslangicSaat">
+                </div>
+
+                <div class="form-group">
+                    <label for="bitisSaat">Bitiş Saati:</label>
+                    <input type="time" class="form-control" id="bitisSaat">
+                </div>
+
+
+                <button type="submit" class="btn btn-primary mt-2">Kuaförü Ekle</button>
+            </form>
+        </div>
+
+        <!-- Mevcut Kuaförlerin Listesi -->
+        <div class="panel panel-default mt-4">
+            <div class="panel-heading">
+                <h5>Mevcut Kuaförler</h5>
+            </div>
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">Kuaför Adı</th>
+                        <th scope="col">Doğum Tarihi</th>
+                        <th scope="col">Eğitim Seviyesi</th>
+                        <th scope="col">Telefon Numarası</th>
+                        <th scope="col">Adres</th>
+                        <th scope="col">Çalışma Günleri</th>
+                        <th scope="col">Çalışma Saatleri</th>
+
+
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">1</th>
+                        <td>Kuaför 1</td>
+                        <td>01.01.1990</td>
+                        <td>Lisans</td>
+                        <td>123-456-7890</td>
+                        <td>İstanbul</td>
+                        <td>Salı-Çarşamba</td>
+                        <td>12.00-18.00</td>
+
+
+                        <td>
+                            <button type="button" class="btn btn-warning btn-sm edit-button">Düzenle</button>
+                            <button type="button" class="btn btn-danger btn-sm delete-button">Sil</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row">2</th>
+                        <td>Kuaför 2</td>
+                        <td>15.05.1985</td>
+                        <td>Ortaokul</td>
+                        <td>987-654-3210</td>
+                        <td>Ankara</td>
+                        <td>Pazartesi-Cuma</td>
+                        <td>13.00-19.00</td>
+
+
+                        <td>
+                            <button type="button" class="btn btn-warning btn-sm edit-button">Düzenle</button>
+                            <button type="button" class="btn btn-danger btn-sm delete-button">Sil</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+
+</html>

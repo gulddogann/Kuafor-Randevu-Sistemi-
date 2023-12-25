@@ -1,0 +1,36 @@
+body {
+    background-color: #343a40;
+    color: #e0e0e0;
+}
+
+.jumbotron {
+    background-color: #343a40;
+    color: #e0e0e0;
+}
+
+.panel {
+    background-color: #343a40;
+    color: #e0e0e0;
+    margin-bottom: 20px;
+}
+
+.table {
+    background-color: #343a40;
+    color: #111010;
+}
+
+.panel-heading {
+    background-color: #343a40;
+    color: #e0e0e0;
+}
+
+.list-group-item {
+    background-color: #e0e0e0;
+    color: #000;
+    ;
+}
+
+
+h2 {
+    font-size: 24px;
+}

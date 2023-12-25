@@ -1,0 +1,31 @@
+.panel-heading {
+    background-color: #343a40;
+    color: white;
+}
+
+h5 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+body {
+    background-color: #343a40;
+}
+
+.jumbotron {
+    background-color: #343a40;
+    color: #ffffff;
+
+}
+
+.panel {
+    background-color: #343a40;
+    color: #ffffff;
+
+}
+
+.table {
+    background-color: #121111;
+    color: #ffffff;
+}

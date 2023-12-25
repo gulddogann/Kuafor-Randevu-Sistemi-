@@ -1,0 +1,23 @@
+body {
+    background-color: #100f0fdb; 
+}
+.jumbotron {
+    background-color: #121111; 
+    color: #ffffff;
+
+}
+
+.panel {
+    background-color: #121111; 
+    color: #ffffff; 
+
+}
+.table {
+    background-color: #121111; 
+    color: #ffffff; 
+}
+
+
+h2 {
+    font-size: 24px;
+}
