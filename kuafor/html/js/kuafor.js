@@ -1,5 +1,4 @@
 document.addEventListener("DOMContentLoaded", function () {
-
     var onaylaButtons = document.querySelectorAll(".onayla-button");
     onaylaButtons.forEach(function (button) {
         button.addEventListener("click", function () {
@@ -22,14 +21,16 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
     var onaylananList = document.getElementById("onaylananRandevular");
-    onaylananList.addEventListener("DOMNodeInserted", function () {
+    var observerInserted = new MutationObserver(function () {
         kapatButonlari();
     });
+    observerInserted.observe(onaylananList, { childList: true });
 
     var onaylananContainer = document.getElementById("onaylananRandevular");
-    onaylananContainer.addEventListener("DOMNodeRemoved", function () {
+    var observerRemoved = new MutationObserver(function () {
         gosterButonlari();
     });
+    observerRemoved.observe(onaylananContainer, { childList: true });
 });
 
 function onaylaRandevu(button) {
@@ -103,3 +104,28 @@ function gosterButonlari() {
         button.style.display = "inline-block";
     });
 }
+document.addEventListener("DOMContentLoaded", function () {
+    var calismaSaatleriForm = document.getElementById('calismaSaatleriForm');
+    var kaydedilenCalismaSaatleri = document.getElementById('kaydedilenCalismaSaatleri');
+
+    calismaSaatleriForm.addEventListener('submit', function (event) {
+        event.preventDefault();
+
+        var calismaGunleri = document.getElementById('calismaGunleri').value;
+        var baslangicSaat = document.getElementById('baslangicSaat').value;
+        var bitisSaat = document.getElementById('bitisSaat').value;
+
+        var newRow = kaydedilenCalismaSaatleri.insertRow();
+
+        var cellGunleri = newRow.insertCell(0);
+        var cellBaslangicSaat = newRow.insertCell(1);
+        var cellBitisSaat = newRow.insertCell(2);
+
+        cellGunleri.textContent = calismaGunleri;
+        cellBaslangicSaat.textContent = baslangicSaat;
+        cellBitisSaat.textContent = bitisSaat;
+
+        calismaSaatleriForm.reset();
+    });
+});
+

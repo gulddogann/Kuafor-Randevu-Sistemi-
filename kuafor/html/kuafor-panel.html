@@ -10,8 +10,8 @@
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-    <script src="kuafor.js"></script>
-    <link rel="stylesheet" href="kuafor.css">
+    <script src="js/kuafor.js"></script>
+    <link rel="stylesheet" href="css/kuafor.css">
 
     <title>Kuaför Paneli</title>
 </head>
@@ -25,13 +25,9 @@
             <div class="col-md-4">
                 <div class="panel panel-default">
                     <div class="panel-heading">
-                        <h2>Çalışma Saatlerini Tanımla</h2>
+                        <h2>Çalışma Günü/Saatleri Tanımla</h2>
                     </div>
                     <form id="calismaSaatleriForm">
-                        <div class="form-group">
-                            <label for="ad">Ad:</label>
-                            <input type="text" class="form-control" id="ad" placeholder="Adınızı girin">
-                        </div>
                         <div class="form-group">
                             <label for="calismaGunleri">Çalışma Günleri:</label>
                             <input type="date" class="form-control" id="calismaGunleri"
@@ -88,6 +84,23 @@
                 </div>
             </div>
         </div>
+    </div>
+    <div class="panel-heading">
+        <h2>Kaydedilen Çalışma Saatleri</h2>
+    </div>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Çalışma Günleri</th>
+                <th>Başlangıç Saati</th>
+                <th>Bitiş Saati</th>
+            </tr>
+        </thead>
+        <tbody id="kaydedilenCalismaSaatleri">
+            <!-- Buraya kaydedilen çalışma saatleri eklenecek -->
+        </tbody>
+    </table>
+    </div>
     </div>
 </body>
 
