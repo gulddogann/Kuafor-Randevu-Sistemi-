@@ -3,23 +3,6 @@
     color: white;
 }
 
-.bildirim-cubugu {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    padding: 10px;
-    background-color: #343a40;
-    color: #ffffff;
-    text-align: center;
-    display: none;
-    z-index: 1000;
-}
-
-.kapat-btn {
-    cursor: pointer;
-}
-
 h5 {
     font-size: 24px;
     margin-bottom: 20px;
@@ -65,4 +48,11 @@ body {
 .gallery-item img {
     max-width: 100%;
     height: auto;
+}
+
+.carousel-item img {
+    width: 100%;
+    height: auto;
+    max-height: 500px;
+    object-fit: contain;
 }
