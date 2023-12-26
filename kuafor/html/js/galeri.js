@@ -13,3 +13,9 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     });
 });
+function kapatBildirimCubugu() {
+    document.getElementById("bildirimCubugu").style.display = "none";
+}
+document.addEventListener("DOMContentLoaded", function () {
+    document.getElementById("bildirimCubugu").style.display = "block";
+});

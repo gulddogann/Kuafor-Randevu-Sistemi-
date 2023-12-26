@@ -3,22 +3,54 @@
     color: white;
 }
 
-.bildirim-cubugu {
+#bildirimCubugu {
+    display: none;
     position: fixed;
     top: 0;
     left: 0;
-    right: 0;
-    padding: 10px;
+    width: 100%;
     background-color: #343a40;
-    color: #ffffff;
+    color: white;
+    padding: 10px;
     text-align: center;
-    display: none;
-    z-index: 1000;
+    animation: hareketEt 1.5s ease infinite;
 }
 
-.kapat-btn {
-    cursor: pointer;
+
+#bildirimCubugu {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #343a40;
+    color: white;
+    padding: 10px;
+    text-align: center;
 }
+
+#bildirimCubugu .kapat-btn {
+    color: white;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+}
+
+
+#carouselExample {
+    max-width: 400px;
+    margin: auto;
+}
+
+.carousel-item img {
+    width: 200%;
+    height: auto;
+    margin-bottom: 0px;
+    margin-top: 10px;
+}
+
 
 h5 {
     font-size: 24px;
@@ -60,6 +92,7 @@ body {
     margin: 10px;
     overflow: hidden;
     transition: transform 0.3s;
+    background-color: #343a40;
 }
 
 .gallery-item img {
