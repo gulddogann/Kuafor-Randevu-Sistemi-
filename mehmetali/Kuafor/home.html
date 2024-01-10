@@ -1,0 +1,77 @@
+<!-- ------------------------------------------- -->
+<!-- home.html -->
+<!-- ------------------------------------------- -->
+
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kuaför Salonu</title>
+    <link rel="stylesheet" type="text/css" href="home.css">
+</head>
+
+<body>
+
+    <header class="bg-dark text-white text-center py-3">
+        <h1>Kuaför Salonu</h1>
+    </header>
+
+    <nav class="bg-secondary text-white py-2">
+        <div class="container">
+            <div id="userType"></div>
+            <p><span id="emailText"></span></p>
+            <a class="btn btn-dark" href='girisYap.html'>Profil</a>
+        </div>
+    </nav>
+
+<nav>
+    <ul>
+        <li><a href="#" class="active">Ana Sayfa</a></li>
+        <button id="adminButton" onclick="location.href='admin.html'">Admin</button>
+        <button id="kuaforButton" onclick="location.href='kuaforPanel.html'">Kuaför Paneli</button>
+        <button id="hizmetlerButton" onclick="location.href='hizmetler.html'">Hizmetler</button>
+        <button id="randevuAlButton" onclick="handleRandevuAlClick()">Randevu Al</button>
+        <button id="galeriButton" onclick="location.href='galeri.html'">Galeri</button> <!-- IN PROGRESS -->
+        <button id="uyeOlButton" onclick="location.href='uyeOl.html'">Üye Ol</button>
+        <button id="kuaforGirisButton" onclick="location.href='girisYap.html'">Giriş Yap</button>
+    </ul>
+</nav>
+
+
+    <section class="main-content">
+        <h2>Hoş Geldiniz!</h2>
+        <p>Kuaför salonumuza hoş geldiniz. Profesyonel ekibimizle size en iyi hizmeti sunmak için buradayız.</p>
+        <button onclick="location.href='hizmetler.html'">Hizmetlerimiz</button>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Kuaför Salonu</p>
+    </footer>
+
+    <script src="home.js"></script>
+
+    <script>
+        function getCookie(name) {
+            const value = `; ${document.cookie}`;
+            const parts = value.split(`; ${name}=`);
+            if (parts.length === 2) return parts.pop().split(';').shift();
+        }
+
+        var storedEmail = getCookie('currentUserEmail');
+        if (storedEmail) {
+            // Daha önce giriş yapmış bir kullanıcı var
+            var emailGirildi = document.getElementById('emailText');
+            emailGirildi.textContent = storedEmail;
+
+            // Kullanıcı türünü cookie'den al ve görüntüle
+            var storedUserType = getCookie('currentUserType');
+            var userTypeDiv = document.getElementById('userType');
+            userTypeDiv.textContent = storedUserType;
+        }
+    </script>
+
+</body>
+
+</html>

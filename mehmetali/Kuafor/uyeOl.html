@@ -1,0 +1,75 @@
+<!-- ------------------------------------------- -->
+<!-- uyeOl.html -->
+<!-- ------------------------------------------- -->
+
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Üye Ol</title>
+    <link rel="stylesheet" type="text/css" href="uyeOl.css">
+</head>
+
+<body>
+
+    <div class="container" id="userContainer">
+        <div id="userType"></div>
+        <p><span id="emailText"></span></p>
+        <button onclick="window.location.href='girisYap.html'" id="profilButton">Profil</button>
+        <button type="button" id="toggleButton" onclick="tumKullanicilariGetir()">Üyeleri Getir</button>
+    </div>
+
+    <div class="container">
+        <h2>Üye Ol</h2>
+        <form id="signupForm">
+            <div class="input-group">
+                <label for="adInput">Ad:</label>
+                <input type="text" id="adInput" required>
+            </div>
+
+            <div class="input-group">
+                <label for="soyadInput">Soyad:</label>
+                <input type="text" id="soyadInput" required>
+            </div>
+
+            <div class="input-group">
+                <label for="emailInput">E-posta:</label>
+                <input type="email" id="emailInput" required>
+            </div>
+
+            <div class="input-group">
+                <label for="sifreInput">Şifre:</label>
+                <input type="password" id="sifreInput" required>
+            </div>
+
+            <button type="button" onclick="uyeOl()">Üye Ol</button>
+            <button onclick="window.location.href='home.html'">Ana Sayfa</button>
+        </form>
+    </div>
+
+    <script src="uyeOl.js"></script>
+
+    <script>
+document.addEventListener('DOMContentLoaded', function () {
+    var containerElement = document.getElementById('userContainer');
+    containerElement.style.display = 'none'; // Başlangıçta içeriği gizle
+
+    var profilButton = document.getElementById('profilButton');
+    var toggleButton = document.getElementById('toggleButton');
+
+    function toggleVisibility() {
+        containerElement.style.display = containerElement.style.display === 'none' ? 'block' : 'none';
+    }
+            
+            // Profil butonunu gizle
+            profilButton.style.display = 'none';
+            // Üyeleri Getir butonunu gizle
+            toggleButton.style.display = 'none';
+        });
+    </script>
+
+</body>
+
+</html>

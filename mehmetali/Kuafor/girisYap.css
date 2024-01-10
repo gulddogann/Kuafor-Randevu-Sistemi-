@@ -1,0 +1,60 @@
+/* ------------------------------------------- */
+/*-- girisYap.css */
+/* ------------------------------------------- */
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh; /* Height set to minimum 100% of the viewport height */
+}
+
+.container {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 100%;
+    text-align: center;
+    margin-top: 20px; /* Added margin-top for spacing */
+}
+
+label {
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+input {
+    padding: 10px;
+    margin-bottom: 15px;
+    width: 100%;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    width: 100%;
+    font-size: 16px;
+    margin-top: 10px; /* Added margin-top for spacing */
+}
+
+button:hover {
+    background-color: #2980b9;
+}
+
+#sonuc {
+    margin-top: 20px;
+    font-size: 18px;
+}

@@ -1,0 +1,72 @@
+<!-- ------------------------------------------- -->
+<!-- kuaforPanel.html -->
+<!-- ------------------------------------------- -->
+
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Kuaför Paneli</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="kuaforPanel.css">
+</head>
+
+<body>
+
+    <header class="bg-dark text-center py-3">
+        <h1 class="text-white">Kuaför Paneli</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <button id="homeButton" onclick="location.href='home.html'">Ana Sayfa</button>
+        </ul>
+    </nav>
+
+
+    <nav class="bg-dark">
+        <div class="container" style="max-width: 150px;">
+            <div id="userType"></div>
+            <p class="text-black"><span id="emailText"></span></p>
+            <a class="btn btn-dark" href='girisYap.html'>Profil</a>
+        </div>
+    </nav>
+    
+    <div style="text-align: center;">
+        <h2>Randevularınız</h2>
+    </div>
+    
+
+    <div class="container mt-4">
+        <!-- Buraya randevu bilgileri eklenecek -->
+        <div id="randevuListesi"></div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <script src="kuaforPanel.js"></script>
+
+    <script>
+        function getCookie(name) {
+            const value = `; ${document.cookie}`;
+            const parts = value.split(`; ${name}=`);
+            if (parts.length === 2) return parts.pop().split(';').shift();
+        }
+
+        var storedEmail = getCookie('currentUserEmail');
+        if (storedEmail) {
+            var emailText = document.getElementById('emailText');
+            emailText.textContent = storedEmail;
+
+            var storedUserType = getCookie('currentUserType');
+            var userTypeDiv = document.getElementById('userType');
+            userTypeDiv.textContent = storedUserType;
+        }
+    </script>
+
+</body>
+
+</html>
