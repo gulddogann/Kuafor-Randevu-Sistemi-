@@ -163,6 +163,7 @@ function silModal(kuaförAdi, doğumTarihi, egitimSeviyesi, telefonNumarasi, adr
             }
         }
     });
+
 }
 
 

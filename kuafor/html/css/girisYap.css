@@ -4,7 +4,7 @@ body {
 
 .app-container {
     background-image: url('https://png.pngtree.com/thumb_back/fw800/background/20230527/pngtree-the-black-woman-was-an-incredible-artistic-artist-image_2669522.jpg');
-    background-size: contain;
+    background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     height: 100vh;
@@ -13,7 +13,7 @@ body {
     justify-content: center;
 }
 
-.registration-form {
+.login-form {
     background-color: rgba(255, 255, 255, 0.8);
     padding: 20px;
     border-radius: 8px;
@@ -26,11 +26,15 @@ label {
     margin: 10px 0;
 }
 
-input {
+input,
+select,
+button {
     width: 100%;
     padding: 8px;
     margin-top: 5px;
     box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
 }
 
 button {
