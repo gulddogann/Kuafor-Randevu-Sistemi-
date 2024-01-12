@@ -3,6 +3,55 @@
     color: white;
 }
 
+#bildirimCubugu {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #343a40;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    animation: hareketEt 1.5s ease infinite;
+}
+
+
+#bildirimCubugu {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #343a40;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+#bildirimCubugu .kapat-btn {
+    color: white;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+}
+
+
+#carouselExample {
+    max-width: 400px;
+    margin: auto;
+}
+
+.carousel-item img {
+    width: 200%;
+    height: auto;
+     margin-bottom: 10px;
+    margin-top: 50px;
+}
+
+
 h5 {
     font-size: 24px;
     margin-bottom: 20px;
@@ -34,10 +83,6 @@ body {
     object-fit: contain;
 }
 
-.card {
-    background-color: #272b2f;
-}
-
 .gallery-container {
     display: flex;
     flex-wrap: wrap;
@@ -47,16 +92,10 @@ body {
     margin: 10px;
     overflow: hidden;
     transition: transform 0.3s;
+    background-color: #343a40;
 }
 
 .gallery-item img {
     max-width: 100%;
     height: auto;
-}
-
-.carousel-item img {
-    width: 100%;
-    height: auto;
-    max-height: 500px;
-    object-fit: contain;
 }

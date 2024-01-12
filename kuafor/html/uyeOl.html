@@ -11,42 +11,59 @@
     <title>Üye Ol</title>
 </head>
 
-<nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
-    <a class="navbar-brand" href="kuaforRandevu.html">Ana Sayfa</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ml-auto">
-            <li class="nav-item">
-                <a class="nav-link" href="uyeOl.html">Üye Ol</a>
-            </li>
-        </ul>
-    </div>
-</nav>
+<body>
 
-<div class="app-container">
-    <form class="registration-form" onsubmit="handleSubmit(event)">
-        <h2>Üye Ol</h2>
-        <label>
-            Ad:
-            <input type="text" name="firstName" required />
-        </label>
-        <label>
-            Soyad:
-            <input type="text" name="lastName" required />
-        </label>
-        <label>
-            E-posta:
-            <input type="email" name="email" required />
-        </label>
-        <label>
-            Şifre:
-            <input type="password" name="password" required />
-        </label>
-        <button type="submit">Üye Ol</button>
-    </form>
-</div>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+        <a class="navbar-brand" href="kuaforRandevu.html">Ana Sayfa</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="uyeOl.html">Üye Ol</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="girisYap.html">Giriş Yap</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="app-container">
+        <form class="registration-form" onsubmit="handleSubmit(event)">
+            <h2>Üye Ol</h2>
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="firstName">Ad:</label>
+                    <input type="text" class="form-control" id="firstName" name="firstName" required />
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="lastName">Soyad:</label>
+                    <input type="text" class="form-control" id="lastName" name="lastName" required />
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="email">E-posta:</label>
+                <input type="email" class="form-control" id="email" name="email" required />
+            </div>
+            <div class="form-group">
+                <label for="password">Şifre:</label>
+                <input type="password" class="form-control" id="password" name="password" required />
+            </div>
+            <div class="form-group">
+                <label for="userType">Kullanıcı Türü:</label>
+                <select class="form-control" id="userType" name="userType" required>
+                    <option value="customer">Müşteri</option>
+                    <option value="barber">Kuaför</option>
+                </select>
+            </div>
+            <button type="submit" class="btn btn-primary">Üye Ol</button>
+        </form>
+    </div>
+
+    <script src="js/uyeOl.js"></script>
+</body>
 
 </html>
