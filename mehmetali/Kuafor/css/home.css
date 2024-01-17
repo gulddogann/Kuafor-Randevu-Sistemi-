@@ -1,0 +1,166 @@
+/* Style from the first CSS file */
+#anaSayfaText {
+    color: #ffffff;
+}
+
+#anaSayfaText:hover {
+    color: #000000;
+}
+
+.py-2 {
+    background-color: #532055;
+    /* Karanlık gri teması */
+    color: #ffffff;
+    /* Beyaz renk */
+}
+
+#sessionTimer {
+    display: none;
+}
+
+#profilTEXT,
+#userEmailINFO,
+#userTypeINFO {
+    display: inline-block;
+    margin-right: 10px;
+    /* İstediniz boşluğu ayarlayabilirsiniz */
+}
+
+.jumbotron {
+    background-color: #511a52;
+    color: #eee;
+    width: 100%;
+    padding: 5%;
+    
+}
+
+#welcomeText{
+    background-color: #511a52;
+    text-align: center;
+}
+#uyeOlBTN{
+    background-color: #994c93;
+    color: #ffffff;
+    margin-bottom: 10px;
+}
+
+.jumbotron .container {
+    width: 100%;
+    max-width: none;
+}
+
+.panel {
+    background-color: #343a40;
+    color: #eee;
+}
+
+.table {
+    background-color: #343a40;
+    color: #ffffff;
+}
+
+.panel-heading {
+    background-color: #343a40;
+    color: white;
+}
+
+h2 {
+    font-size: 24px;
+    color: #ffffff;
+    margin-bottom: 10px;
+    margin-top: 50px;
+}
+
+.list-group-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffffff;
+    border: 1px solid #dee2e6;
+    margin-bottom: 5px;
+    color: #000000;
+}
+
+.list-group-item .actions button {
+    margin-left: 5px;
+}
+
+#homeText {
+    text-align: center;
+}
+
+.owl-stage-outer {
+    display: flex;
+}
+
+.image-container {
+    width: 250px;
+    margin-right: 5px;
+    flex-shrink: 0;
+}
+
+.item {
+    width: 100%;
+}
+
+.item a {
+    display: block;
+}
+
+.item img {
+    width: 100%;
+    height: auto;
+}
+
+footer {
+    position:static;
+    bottom: 0;
+    width: 100%;
+    background-color: #511a52; /* Footer'ın arkaplan rengini belirleyebilirsiniz */
+    color: white; /* Yazı rengini isteğinize göre ayarlayabilirsiniz */
+    padding: 20px; /* Footer içeriği ile arasındaki boşluğu ayarlayabilirsiniz */
+}
+
+.google-reviews-container {
+    background-color: #511a52; /* İstenilen arkaplan rengini belirleyebilirsiniz */
+    padding: 20px; /* İstenilen içerik içi boşluğu belirleyebilirsiniz */
+    border-radius: 10px; /* Kenar yuvarlama miktarını ayarlayabilirsiniz */
+    text-align: center; /* İçeriği ortalamak için */
+    width: 400px;
+}
+
+.google-star {
+    text-decoration: none; /* Bağlantının altını çizme */
+    color: #ffffff; /* Bağlantı rengi */
+    display: inline-block; /* Diğer öğelerle düzgün bir sıralama için */
+    padding: 10px 20px; /* Bağlantı içi boşluk */
+    border: 1px solid #ccc; /* Çerçeve ekleyebilirsiniz */
+    border-radius: 5px; /* Kenar yuvarlama miktarı */
+    transition: background-color 0.3s; /* Hover efekti için geçiş süresi */
+}
+
+.google-star:hover {
+    background-color: #371438; /* Hover rengi */
+}
+
+.google-star-item-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.google-star-item-1 {
+    display: flex;
+    align-items: center;
+}
+
+.google-star-item-1 i {
+    color: #ffc107; /* Yıldız rengi */
+    margin-right: 3px; /* Yıldızlar arası boşluk */
+}
+
+.google-star-item-2,
+.google-star-item-3 {
+    font-size: 18px; /* Metin boyutu */
+    margin: 10px 0; /* Metin içi boşluk */
+}

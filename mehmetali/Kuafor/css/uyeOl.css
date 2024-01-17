@@ -1,0 +1,54 @@
+/* ------------------------------------------- */
+/*-- uyeOl.css */
+/* ------------------------------------------- */
+
+.uyeOlcontainer {
+    margin: 0 auto; /* Yatayda ortalamak için */
+    width: 100%;
+    max-width: 600px;
+    padding: 30px;
+    background-color: #532055;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin-top: 50px;
+}
+
+
+h2 {
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+
+
+.input-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    color: #ffffff;
+    margin-bottom: 8px;
+}
+
+input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+button {
+    padding: 12px;
+    background-color: #742677;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #2980b9;
+}

@@ -1,0 +1,211 @@
+<!-- ------------------------------------------- -->
+<!-- calismaSaatleri.html -->
+<!-- ------------------------------------------- -->
+
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Çalışma Saatlerim - Payk Kuaför</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/admin.css">
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <a class="navbar-brand" href="home.html">Payk Kuaför</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span id="navbarTogglerButton" class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                <li class="nav-item">
+                    <button class="nav-link btn btn-link" onclick="adminButtonControl()">Admin</button>
+                </li>
+                <li class="nav-item">
+                    <button class="nav-link btn btn-link" onclick="kuaforButtonControl()">Kuaför
+                        Paneli</button>
+                </li>
+                <li class="nav-item">
+                    <button class="nav-link btn btn-link" onclick="musteriButtonControl()">Randevu Al</button>
+                </li>
+                <li class="nav-item">
+                    <button class="nav-link btn btn-link" onclick="location.href='galeri.html'">Galeri</button>
+                </li>
+                <li class="nav-item">
+                    <button id="uyeOlButton" class="nav-link btn btn-link" onclick="location.href='uyeOl.html'">Üye
+                        Ol</button>
+                </li>
+                <li class="nav-item">
+                    <button id="girisYapButton" class="nav-link btn btn-link"
+                        onclick="location.href='girisYap.html'">Giriş Yap</button>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <nav class="py-2">
+        <div class="container">
+            <p id="profilTEXT">Profil: </p>
+            <p id="userEmailINFO"></p>
+            <p id="userTypeINFO"></p>
+            <p id="sessionTimer">Oturum süresi: <span id="timerValue">600</span> saniye</p>
+            <a id="profilBTN" class="btn btn-dark" onclick="cikisYap()">Çıkış Yap</a>
+        </div>
+    </nav>
+
+    <button id="calismaSaatlerimButtonu" class="button" onclick="location.href='kuaforPanel.html'">Randevularım</button>
+
+    <div id="calismaSaatleriPaneli" class="container mt-4">
+        <span style="display: inline-block; text-align: center; font-size: 24px; width: 50%;">Çalışma Saatlerim</span>
+    </div>
+
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-md-6 mx-auto">
+                <div style="background-color: #532055;" class="card">
+                    <div class="card-header">
+                        <h2 class="text-center">Çalışma Saatlerini Belirle</h2>
+                    </div>
+                    <div class="card-body">
+                        <div class="form-group">
+                            <label for="email">Email:</label>
+                            <input type="email" id="email" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label for="tarih">Tarih Seçiniz:</label>
+                            <input type="text" id="tarih" class="form-control" placeholder="Tarih Seçiniz" data-input>
+                        </div>
+                        <div class="form-group">
+                            <label for="baslangicSaat">Başlangıç Saati Seçiniz:</label>
+                            <input type="text" id="saat" class="form-control" placeholder="Başlangıç Saati Seçiniz"
+                                data-input>
+                        </div>
+                        <div class="form-group">
+                            <label for="bitisSaat">Bitiş Saati Seçiniz:</label>
+                            <input type="text" id="bitisSaat" class="form-control" placeholder="Bitiş Saati Seçiniz"
+                                data-input>
+                        </div>
+                        <!-- Kaydet Butonu -->
+                        <button style="background-color: #742677; color:white; " class="btn" onclick="kontrolEt()">Kaydet</button>
+                    </div>
+                </div>
+                <!-- Çalışma Saatlerini Gösteren Tablo -->
+                <div class="card mt-3" id="calismaSaatleriPanel" style="display: none;">
+                    <div class="card-header">
+                        <h2 class="text-center">Belirlenen Çalışma Saatleri</h2>
+                    </div>
+                    <div class="card-body">
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th scope="col">Tarih</th>
+                                    <th scope="col">Başlangıç Saati</th>
+                                    <th scope="col">Bitiş Saati</th>
+                                    <th scope="col">İşlem</th>
+                                </tr>
+                            </thead>
+                            <tbody id="calismaTableBody">
+                                <!-- Çalışma saatleri tablosu buraya eklenecek -->
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+    <script src="../js/calismaSaatleri.js"></script>
+    <script src="../js/home.js"></script>
+    <script src="../js/cikisYap.js"></script>
+
+    <script>
+        flatpickr("#tarih", {
+            enableTime: false,
+            dateFormat: "Y-m-d"
+        });
+        flatpickr("#saat", {
+            enableTime: true,
+            noCalendar: true,
+            dateFormat: "H:i",
+            time_24hr: true
+        });
+        flatpickr("#bitisSaat", {
+            enableTime: true,
+            noCalendar: true,
+            dateFormat: "H:i",
+            time_24hr: true
+        });
+    </script>
+
+    <script>
+        var storedEmail = localStorage.getItem("storedEmail");
+        var storedUserType = localStorage.getItem("storedUserType");
+        if (storedEmail === null || storedEmail === undefined) {
+            var userTypeINFO = document.getElementById("userTypeINFO");
+            var profilBTN = document.getElementById('profilBTN');
+            profilBTN.style.display = "none";
+            userTypeINFO.textContent = "Ziyaretci";
+        } else {
+            var userEmailINFO = document.getElementById("userEmailINFO");
+            userEmailINFO.textContent = storedEmail;
+            var userTypeINFO = document.getElementById("userTypeINFO");
+            userTypeINFO.textContent = storedUserType;
+            var uyeOlButton = document.getElementById('uyeOlButton');
+            var girisYapButton = document.getElementById('girisYapButton');
+            uyeOlButton.style.display = "none";
+            girisYapButton.style.display = "none";
+        }
+    </script>
+
+    <script>
+        var storedUserType = localStorage.getItem("storedUserType");
+        if (storedUserType !== null) {
+            startSessionTimer();
+            window.addEventListener("keydown", resetSessionTimer);
+            window.addEventListener("mousemove", resetSessionTimer);
+            window.addEventListener("click", resetSessionTimer);
+
+            var sessionTimer;
+            var counter = 600;
+
+            function startSessionTimer() {
+                document.getElementById("sessionTimer").style.display = "block";
+                sessionTimer = setInterval(function () {
+                    counter--;
+                    updateTimerDisplay();
+
+                    if (counter <= 0) {
+                        clearInterval(sessionTimer);
+                        cikisYap();
+                    }
+                }, 1000);
+            }
+
+            function resetSessionTimer() {
+                counter = 600;
+                clearInterval(sessionTimer);
+                startSessionTimer();
+                updateTimerDisplay();
+            }
+
+            function updateTimerDisplay() {
+                document.getElementById("timerValue").textContent = counter;
+            }
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,260 @@
+<!-- ------------------------------------------- -->
+<!-- home.html -->
+<!-- ------------------------------------------- -->
+
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Ana Sayfa - Payk Kuaför</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/admin.css">
+    <link rel="stylesheet" href="../css/home.css">
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <a class="navbar-brand" href="home.html">Payk Kuaför</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span id="navbarTogglerButton" class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                <li class="nav-item">
+                    <button class="nav-link btn btn-link" onclick="adminButtonControl()">Admin</button>
+                </li>
+                <li class="nav-item">
+                    <button class="nav-link btn btn-link" onclick="kuaforButtonControl()">Kuaför
+                        Paneli</button>
+                </li>
+                <li class="nav-item">
+                    <button class="nav-link btn btn-link" onclick="musteriButtonControl()">Randevu Al</button>
+                </li>
+                <li class="nav-item">
+                    <button class="nav-link btn btn-link" onclick="location.href='galeri.html'">Galeri</button>
+                </li>
+                <li class="nav-item">
+                    <button id="uyeOlButton" class="nav-link btn btn-link" onclick="location.href='uyeOl.html'">Üye Ol</button>
+                </li>
+                <li class="nav-item">
+                    <button id="girisYapButton" class="nav-link btn btn-link" onclick="location.href='girisYap.html'">Giriş Yap</button>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <nav class="py-2">
+        <div class="container">
+            <p id="profilTEXT">Profil: </p>
+            <p id="userEmailINFO"></p>
+            <p id="userTypeINFO"></p>
+            <p id="sessionTimer">Oturum süresi: <span id="timerValue">600</span> saniye</p>
+            <a id="profilBTN" class="btn btn-dark" onclick="cikisYap()">Çıkış Yap</a>
+        </div>
+    </nav>
+
+    <div id="mainContainer" class="container mt-3">
+        <div>
+            <div id="welcomeText">
+                <h1>Hoş Geldiniz! - Payk Kuaför</h1>
+                <a id="uyeOlBTN" class="btn" href='uyeOl.html'>Hemen Üye Olmak İçin Tıklayın!</a>
+            </div>
+        </div>
+
+        <div class="jumbotron mt-4">
+            <h5 class="display-4">Profesyonel Ekibimizle Hizmetinizdeyiz</h5>
+            <p class="lead">Kuaför salonumuzda, her müşterimize özel bir deneyim sunmak için çalışıyoruz.
+                Randevunuzu
+                ayırdığınız andan
+                itibaren, sizi rahat ettirmek için elimizden geleni yapacağız.
+                Saçınız için aradığınız her şeyi sunuyoruz, ister basit bir kesim ister karmaşık bir renklendirme
+                olsun.
+                Uzman ekibimiz, saçınızın ihtiyaçlarını anlamak ve size en iyi sonucu elde etmenize yardımcı olmak
+                için
+                her zaman hazırdır.
+            </p>
+        </div>
+
+
+        <div class="owl-stage-outer">
+            <div class="image-container" style="width: 250px; height: 500px; margin-right: 100px; margin-left: 100px;">
+                <div class="item">
+                    <img src="https://i.pinimg.com/474x/38/a3/76/38a376e817706795556f8fedecb3c018.jpg" alt="Image 1"
+                        style="width: 250px; height: 400px; margin-right: 100px; width:100%;">
+                </div>
+                <div class="best-feature-card col" data-aos="fade-up">
+                    <i class="best-feature-icon fas fa-hands-helping"></i>
+                    <h3 class="underline underline-left">Anında Destek</h3>
+                    <p class="best-feature-text">
+                        İhtiyaç duyduğunuz her an ekibimiz size destek olmak için hazır! İletişim bilgilerimiz
+                        üzerinden
+                        7/24 bize ulaşabilirsiniz.
+                    </p>
+                </div>
+            </div>
+            <div class="image-container" style="width: 250px; height: 500px; margin-right: 100px;">
+                <div class="item">
+                    <img src="https://i.pinimg.com/236x/b9/67/2b/b9672bd082a314a30e1d54b7000aa468.jpg" alt="Image 2"
+                        style="width: 250px; height: 400px; margin-right: 100px; width:100%;">
+                </div>
+                <div class="best-feature-card col" data-aos="fade-up">
+                    <i class="best-feature-icon fas fa-mobile-alt"></i>
+                    <h3 class="underline underline-left">Kolay Kullanım</h3>
+                    <p class="best-feature-text">
+                        Web panelimizden salonumuza dair tüm bilgileri her an
+                        kontrol edebilmenin rahatlığıyla tanışın.
+                    </p>
+                </div>
+            </div>
+            <div class="image-container" style="width: 250px; height: 500px; margin-right: 100px;">
+                <div class="item">
+                    <img src="https://i.pinimg.com/236x/1e/0f/10/1e0f1023ed1c7a85fcb97da47fc0ad39.jpg" alt="Image 3"
+                        style="width: 250px; height: 400px; margin-right: 100px; width:100%;">
+                </div>
+                <div class="best-feature-card col" data-aos="fade-up">
+                    <i class="best-feature-icon fas fa-suitcase"></i>
+                    <h3 class="underline underline-left">%100 Güven</h3>
+                    <p class="best-feature-text">
+                        Tüm verileriniz bizimle güvende! Salonunuza ve size dair her türlü bilgiyi güvenle saklıyor
+                        ve
+                        koruyoruz.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div style="margin-bottom: 100px;"></div>
+
+        <form>
+            <section class="container google-reviews-container my-inner">
+                <a href="https://www.google.com/search?client=firefox-b-d&amp;q=salonrandevuPAYK#lrd=0x14b55f0fe2e16bdf:0x2752244e38c1009,1,,,"
+                    target="_blank" class="google-star">
+                    <div class="google-star-item-row">
+                        <div class="google-star-item-1">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <div class="google-star-item-2">Mükemmel 4.9/5</div>
+                    </div>
+                    <div class="google-star-item-3">
+                        <span class="google-g">G</span><span class="google-o-1">o</span><span
+                            class="google-o-2">o</span><span class="google-g">g</span><span
+                            class="google-l">l</span><span class="google-e">e</span>
+                        değerlendirmemiz
+                    </div>
+                </a>
+            </section>
+        </form>
+
+    </div>
+    </div>
+
+
+    <footer class="text-white py-4 mt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h3>Bize Ulaşın</h3>
+                    <form>
+                        <div class="form-group">
+                            <label for="adSoyad">Ad Soyad:</label>
+                            <input type="text" class="form-control" id="adSoyad" placeholder="Adınız ve Soyadınız">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email:</label>
+                            <input type="email" class="form-control" id="email" placeholder="Email Adresiniz">
+                        </div>
+                        <div class="form-group">
+                            <label for="mesaj">Mesajınız:</label>
+                            <textarea class="form-control" id="mesaj" rows="4" placeholder="Mesajınız"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Gönder</button>
+                    </form>
+                </div>
+                <div class="col-md-6">
+                    <h3>İletişim Bilgileri</h3>
+                    <p><i class="fab fa-instagram"></i> Instagram: @sactasarim</p>
+                    <p><i class="far fa-envelope"></i> Email: sactasarim@gmail.com</p>
+                    <p><i class="fab fa-whatsapp"></i> WhatsApp: 212-234-234</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js"></script>
+    <script src="../js/home.js"></script>
+    <script src="../js/cikisYap.js"></script>
+
+    <script>
+        var storedEmail = localStorage.getItem("storedEmail");
+        var storedUserType = localStorage.getItem("storedUserType");
+        if (storedEmail === null || storedEmail === undefined) {
+            var userTypeINFO = document.getElementById("userTypeINFO");
+            var profilBTN = document.getElementById('profilBTN');
+            profilBTN.style.display = "none";
+            userTypeINFO.textContent = "Ziyaretci";
+
+        } else {
+            var userEmailINFO = document.getElementById("userEmailINFO");
+            userEmailINFO.textContent = storedEmail;
+            var userTypeINFO = document.getElementById("userTypeINFO");
+            userTypeINFO.textContent = storedUserType;
+            var uyeOlButton = document.getElementById('uyeOlButton');
+            var girisYapButton = document.getElementById('girisYapButton');
+            uyeOlButton.style.display = "none";
+            girisYapButton.style.display = "none";
+        }
+    </script>
+
+    <script>
+        var storedUserType = localStorage.getItem("storedUserType");
+        if (storedUserType !== null) {
+            startSessionTimer();
+            window.addEventListener("keydown", resetSessionTimer);
+            window.addEventListener("mousemove", resetSessionTimer);
+            window.addEventListener("click", resetSessionTimer);
+
+            var sessionTimer;
+            var counter = 600;
+
+            function startSessionTimer() {
+                document.getElementById("sessionTimer").style.display = "block";
+                sessionTimer = setInterval(function () {
+                    counter--;
+                    updateTimerDisplay();
+
+                    if (counter <= 0) {
+                        clearInterval(sessionTimer);
+                        cikisYap();
+                    }
+                }, 1000);
+            }
+
+            function resetSessionTimer() {
+                counter = 600;
+                clearInterval(sessionTimer);
+                startSessionTimer();
+                updateTimerDisplay();
+            }
+
+            function updateTimerDisplay() {
+                document.getElementById("timerValue").textContent = counter;
+            }
+        }
+    </script>
+</body>
+
+</html>
