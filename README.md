@@ -5,7 +5,7 @@
 The Project is to make a hair salon`s website. in that website customer can see our products, Gallery, and etc. and the customer can make a reservations if they want.
 ## Gallery Page
 ![screencapture-127-0-0-1-5500-mehmetali-Kuafor-html-galeri-html-2024-01-17-21_31_18](https://github.com/gulddogann/Kuafor-Randevu-Sistemi-/assets/80628052/ce086b44-a072-45a0-9553-2c378262780d)
-In this panel the customer can see the work that we have done before.
+In this page the customer can see the work that we have done before.
 ## Sign Up Page
 ![screencapture-127-0-0-1-5500-mehmetali-Kuafor-html-uyeOl-html-2024-01-17-21_31_38](https://github.com/gulddogann/Kuafor-Randevu-Sistemi-/assets/80628052/9a987272-24b0-412b-94ea-d52acd733889)
 If customer interested in our salon, they can register their name, surname, Email, and password to the website.
