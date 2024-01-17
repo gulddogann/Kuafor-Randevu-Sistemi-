@@ -16,6 +16,6 @@ After sign up, they can login to the website and after that they can make reserv
 ## Tools
 We are using [spring boot initializr](https://start.spring.io) as our Back-end application writing in [java]
 And also as a Front-End we`re using
--javascript
--HTML and
--CSS
+- [Javascript]
+- [HTML] and
+- [CSS]
