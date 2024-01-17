@@ -9,6 +9,6 @@ In this page the customer can see the work that we have done before.
 ## Sign Up Page
 ![screencapture-127-0-0-1-5500-mehmetali-Kuafor-html-uyeOl-html-2024-01-17-21_31_38](https://github.com/gulddogann/Kuafor-Randevu-Sistemi-/assets/80628052/9a987272-24b0-412b-94ea-d52acd733889)
 If customer interested in our salon, they can register their name, surname, Email, and password to the website.
-##Login Page
+## Login Page
 ![screencapture-127-0-0-1-5500-mehmetali-Kuafor-html-girisYap-html-2024-01-17-21_31_52](https://github.com/gulddogann/Kuafor-Randevu-Sistemi-/assets/80628052/b495becb-5210-4cab-a269-5079ff957a03)
 After sign up, they can login to the website and after that they can make reservation to visit our hair salon.
