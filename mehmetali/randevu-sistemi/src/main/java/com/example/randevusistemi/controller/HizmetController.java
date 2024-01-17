@@ -19,7 +19,6 @@ public class HizmetController {
         this.hizmetRepository = hizmetRepository;
     }
 
-    // Tüm hizmetleri getir
     @GetMapping
     public List<Hizmet> getAllHizmetler() {
         return hizmetRepository.findAll();

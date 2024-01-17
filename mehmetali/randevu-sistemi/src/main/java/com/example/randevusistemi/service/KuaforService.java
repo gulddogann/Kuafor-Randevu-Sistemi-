@@ -25,7 +25,6 @@ public class KuaforService {
     public void deleteCalismaSaati(Long id){kuaforRepository.deleteById(id);}
 
     public void kaydet(Kuafor kuafor) {
-        // Kuafor entity'sini kaydet
         kuaforRepository.save(kuafor);
     }
 }

@@ -1,9 +1,5 @@
-/* ------------------------------------------- */
-/*-- uyeOl.css */
-/* ------------------------------------------- */
-
 .uyeOlcontainer {
-    margin: 0 auto; /* Yatayda ortalamak için */
+    margin: 0 auto;
     width: 100%;
     max-width: 600px;
     padding: 30px;

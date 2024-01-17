@@ -13,7 +13,7 @@ function cikisYap() {
                 if (response.ok) {
                     alert("Çıkış yapılan kullanıcı: " + storedEmail);
                     localStorage.clear();
-                    window.location.href="home.html";
+                    window.location.href = "home.html";
                 } else {
                     console.error('Çıkış yapılamadı');
                     alert('Çıkış yapılamadı');
@@ -23,7 +23,7 @@ function cikisYap() {
                 console.error('Çıkış yapılamadı', error);
                 alert('Çıkış yapılamadı');
             });
-    }else{
+    } else {
         alert("Önce giriş yapmalısınız.")
     }
 }

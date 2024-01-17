@@ -1,33 +1,11 @@
-//-------------------------------------------
-//-- girisYap.js
-//-------------------------------------------
-
-document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener("DOMContentLoaded", function () {
     var storedEmail = localStorage.getItem("storedEmail");
-    if (storedEmail === null){
+    if (storedEmail === null) {
         document.getElementById("cikisYapBTN").style.display = "none";
-    }else{
+    } else {
         document.getElementById("cikisYapBTN").style.display = "block";
     }
-    
-
 });
-
-function tumKullanicilariGetir() {
-    fetch('http://localhost:8080/api/users')
-        .then(response => {
-            if (!response.ok) {
-                throw new Error('Kullanıcı listesi bulunamadı');
-            }
-            return response.json();
-        })
-        .then(data => {
-            console.log(data);
-        })
-        .catch(error => {
-            console.error('Veri çekme hatası:', error.message);
-        });
-}
 
 var sessionTimer;
 var counter = 600;
@@ -61,7 +39,6 @@ var userPassword = document.getElementById('passwordInput').value;
 var userEmailINFO = document.getElementById('userEmailINFO');
 var userTypeINFO = document.getElementById('userTypeINFO');
 var storedEmail = localStorage.getItem("storedEmail");
-
 
 function kontrolEt(userEmail) {
 
@@ -97,7 +74,6 @@ function kontrolEt(userEmail) {
                 alert('Logged Email kontrol hatası. Lütfen tekrar deneyin.');
             });
     }
-
 }
 
 function girisYap() {
@@ -175,10 +151,6 @@ function saveUserType() {
         });
 }
 
-
-
-
-
 function cikisYap() {
 
     var userEmail = document.getElementById('emailInput').value;
@@ -205,7 +177,7 @@ function cikisYap() {
                 console.error('Çıkış yapılamadı', error);
                 alert('Çıkış yapılamadı');
             });
-    }else{
+    } else {
         alert("Önce giriş yapmalısınız.")
     }
 }

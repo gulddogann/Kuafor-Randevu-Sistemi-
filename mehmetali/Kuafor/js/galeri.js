@@ -1,7 +1,3 @@
-//-------------------------------------------
-//-- galeri.js
-//-------------------------------------------
-
 document.addEventListener("DOMContentLoaded", function () {
     var resimler = document.querySelectorAll(".galeri-resim");
 

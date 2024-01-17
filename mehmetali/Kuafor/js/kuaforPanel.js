@@ -1,6 +1,3 @@
-//-------------------------------------------
-//-- kuaforPanel.js
-//-------------------------------------------
 
 document.addEventListener("DOMContentLoaded", function () {
     getCombinedData();
@@ -93,7 +90,6 @@ function createRandevuCard(randevu) {
     cardBody.appendChild(deleteButton);
 
     card.appendChild(cardBody);
-
     return card;
 }
 

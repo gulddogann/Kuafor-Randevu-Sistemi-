@@ -6,5 +6,4 @@ import org.springframework.stereotype.Repository;
 
 @Repository
 public interface KuaforRepository extends JpaRepository<Kuafor, Long> {
-    // Ekstra sorgular veya yöntemler buraya eklenebilir
 }

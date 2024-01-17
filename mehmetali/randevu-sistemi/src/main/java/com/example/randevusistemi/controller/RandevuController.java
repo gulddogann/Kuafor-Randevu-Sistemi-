@@ -21,14 +21,12 @@ public class RandevuController {
         this.randevuService = randevuService;
     }
 
-    // Tüm randevuları getir
     @GetMapping
     public ResponseEntity<List<Randevu>> getAllRandevular() {
         List<Randevu> randevular = randevuService.getAllRandevular();
         return new ResponseEntity<>(randevular, HttpStatus.OK);
     }
 
-    // Belirli bir randevuyu getir
     @GetMapping("/{id}")
     public ResponseEntity<Randevu> getRandevuById(@PathVariable Long id) {
         Optional<Randevu> randevu = randevuService.getRandevuById(id);
@@ -36,14 +34,12 @@ public class RandevuController {
                 .orElseGet(() -> new ResponseEntity<>(HttpStatus.NOT_FOUND));
     }
 
-    // Yeni randevu oluştur
     @PostMapping
     public ResponseEntity<Randevu> createRandevu(@RequestBody Randevu randevu) {
         Randevu createdRandevu = randevuService.saveRandevu(randevu);
         return new ResponseEntity<>(createdRandevu, HttpStatus.CREATED);
     }
 
-    // Belirli bir randevuyu güncelle
     @PutMapping("/{id}")
     public ResponseEntity<Randevu> updateRandevu(@PathVariable Long id, @RequestBody Randevu randevu) {
         if (randevuService.getRandevuById(id).isPresent()) {
@@ -55,7 +51,6 @@ public class RandevuController {
         }
     }
 
-    // Belirli bir randevuyu sil
     @DeleteMapping("/{id}")
     public ResponseEntity<Void> deleteRandevu(@PathVariable Long id) {
         if (randevuService.getRandevuById(id).isPresent()) {

@@ -1,6 +1,3 @@
-//-------------------------------------------
-//-- home.js
-//-------------------------------------------
 
 var storedUserType = localStorage.getItem("storedUserType");
 

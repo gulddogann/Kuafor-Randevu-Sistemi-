@@ -1,7 +1,3 @@
-//-------------------------------------------
-//-- admin.js
-//-------------------------------------------
-
 document.addEventListener("DOMContentLoaded", function () {
 
     fetch('http://localhost:8080/api/users')

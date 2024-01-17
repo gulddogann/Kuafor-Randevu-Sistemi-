@@ -19,7 +19,7 @@ public class LoggedUserService {
         LoggedUser loggedUser = new LoggedUser();
         loggedUser.setLoggedUserEmail(loggedUserEmail);
         loggedUserRepository.save(loggedUser);
-        return loggedUser.getId(); // Oluşturulan ID'yi döndür
+        return loggedUser.getId();
     }
 
     public List<LoggedUser> getAllLoggedUsers() {

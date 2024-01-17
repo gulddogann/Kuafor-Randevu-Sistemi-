@@ -103,7 +103,7 @@ public class UserController {
             User existingUser = userService.findByUserEmail(userEmail);
 
             if (existingUser != null) {
-                userService.deleteUserById(existingUser.getId()); // Veya kendi silme metodu kullanmanız gerekebilir.
+                userService.deleteUserById(existingUser.getId());
                 return ResponseEntity.ok("Kuafor başarıyla silindi.");
             } else {
                 return ResponseEntity.notFound().build();

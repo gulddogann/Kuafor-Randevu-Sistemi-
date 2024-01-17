@@ -1,4 +1,3 @@
-/* Style from the first CSS file */
 #anaSayfaText {
     color: #ffffff;
 }
@@ -9,9 +8,7 @@
 
 .py-2 {
     background-color: #532055;
-    /* Karanlık gri teması */
     color: #ffffff;
-    /* Beyaz renk */
 }
 
 #sessionTimer {
@@ -23,7 +20,6 @@
 #userTypeINFO {
     display: inline-block;
     margin-right: 10px;
-    /* İstediniz boşluğu ayarlayabilirsiniz */
 }
 
 .jumbotron {
@@ -31,14 +27,15 @@
     color: #eee;
     width: 100%;
     padding: 5%;
-    
+
 }
 
-#welcomeText{
+#welcomeText {
     background-color: #511a52;
     text-align: center;
 }
-#uyeOlBTN{
+
+#uyeOlBTN {
     background-color: #994c93;
     color: #ffffff;
     margin-bottom: 10px;
@@ -113,34 +110,34 @@ h2 {
 }
 
 footer {
-    position:static;
+    position: static;
     bottom: 0;
     width: 100%;
-    background-color: #511a52; /* Footer'ın arkaplan rengini belirleyebilirsiniz */
-    color: white; /* Yazı rengini isteğinize göre ayarlayabilirsiniz */
-    padding: 20px; /* Footer içeriği ile arasındaki boşluğu ayarlayabilirsiniz */
+    background-color: #511a52;
+    color: white;
+    padding: 20px;
 }
 
 .google-reviews-container {
-    background-color: #511a52; /* İstenilen arkaplan rengini belirleyebilirsiniz */
-    padding: 20px; /* İstenilen içerik içi boşluğu belirleyebilirsiniz */
-    border-radius: 10px; /* Kenar yuvarlama miktarını ayarlayabilirsiniz */
-    text-align: center; /* İçeriği ortalamak için */
+    background-color: #511a52;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
     width: 400px;
 }
 
 .google-star {
-    text-decoration: none; /* Bağlantının altını çizme */
-    color: #ffffff; /* Bağlantı rengi */
-    display: inline-block; /* Diğer öğelerle düzgün bir sıralama için */
-    padding: 10px 20px; /* Bağlantı içi boşluk */
-    border: 1px solid #ccc; /* Çerçeve ekleyebilirsiniz */
-    border-radius: 5px; /* Kenar yuvarlama miktarı */
-    transition: background-color 0.3s; /* Hover efekti için geçiş süresi */
+    text-decoration: none;
+    color: #ffffff;
+    display: inline-block;
+    padding: 10px 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transition: background-color 0.3s;
 }
 
 .google-star:hover {
-    background-color: #371438; /* Hover rengi */
+    background-color: #371438;
 }
 
 .google-star-item-row {
@@ -155,12 +152,12 @@ footer {
 }
 
 .google-star-item-1 i {
-    color: #ffc107; /* Yıldız rengi */
-    margin-right: 3px; /* Yıldızlar arası boşluk */
+    color: #ffc107;
+    margin-right: 3px;
 }
 
 .google-star-item-2,
 .google-star-item-3 {
-    font-size: 18px; /* Metin boyutu */
-    margin: 10px 0; /* Metin içi boşluk */
+    font-size: 18px;
+    margin: 10px 0;
 }

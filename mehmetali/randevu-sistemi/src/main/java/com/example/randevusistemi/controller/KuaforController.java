@@ -40,13 +40,4 @@ public class KuaforController {
             return new ResponseEntity<>(HttpStatus.NOT_FOUND);
         }
     }
-/*
-    @PostMapping("/kaydet")
-    public void kaydet(@RequestBody Kuafor kuafor) {
-        // Gelen veriyi doğrudan kaydetme işlemini gerçekleştirin
-        kuaforService.kaydet(kuafor);
-    }
-*/
-
-
 }

@@ -44,7 +44,7 @@ button:hover {
 
 #sessionTimer {
     display: none;
-    margin-top: 30px; /* Oturum süresi paragrafına bir üst boşluk ekleyin */
+    margin-top: 30px;
 }
 
 #timerValue {

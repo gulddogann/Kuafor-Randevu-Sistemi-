@@ -1,13 +1,13 @@
 /* #532055 */
 
-
 .navbar {
-    background-color: #371438; /* Bordo-pembe temasına uygun arka plan rengi */
+    background-color: #371438;
 }
 
 #anaSayfaText {
     color: #ffffff;
 }
+
 #anaSayfaText:hover {
     color: #000000;
 }
@@ -18,34 +18,34 @@
 }
 
 .navbar-light .navbar-brand {
-    color: #ffffff; /* Beyaz renk */
+    color: #ffffff;
     font-size: 24px;
 }
 
 .navbar-light .navbar-nav .nav-link {
-    color: #ffffff; /* Beyaz renk */
+    color: #ffffff;
     font-size: 16px;
 }
 
 .py-2 {
-    background-color: #532055; /* Karanlık gri teması */
-    color: #ffffff; /* Beyaz renk */
+    background-color: #532055;
+    color: #ffffff;
 }
 
 .btn-dark {
-    background-color: #742677; /* Karanlık gri teması */
-    color: #ffffff; /* Beyaz renk */
+    background-color: #742677;
+    color: #ffffff;
 }
 
 .btn-dark:hover {
-    background-color: #481d49; /* Hafifçe koyu gri hover rengi */
+    background-color: #481d49;
     color: #ffffff;
 }
 
 body {
     background-color: #371438;
     font-family: 'Arial', sans-serif;
-    color: #ffffff; /* Yazı rengi beyaz */
+    color: #ffffff;
 }
 
 .container {
@@ -53,8 +53,8 @@ body {
 }
 
 .container h1 {
-    color: #ffffff; /* Ana başlık rengi */
-    padding: 10px;   
+    color: #ffffff;
+    padding: 10px;
     font-size: 24px;
 }
 
@@ -164,7 +164,7 @@ input[type="text"] {
     box-sizing: border-box;
 }
 
-#tabloIcerik{
+#tabloIcerik {
     color: #ffffff;
     font-weight: bold;
 }
@@ -227,44 +227,39 @@ input[type="text"] {
 #userEmailINFO,
 #userTypeINFO {
     display: inline-block;
-    margin-right: 10px; /* İstediniz boşluğu ayarlayabilirsiniz */
+    margin-right: 10px;
 }
 
 .card.p-3 {
-    /* Özel CSS kurallarını buraya ekleyebilirsiniz */
-    background-color: #532055; /* Örnek: Arkaplan rengini gri tonu yapma */
-    border-radius: 10px; /* Örnek: Kartın köşelerini yuvarlama */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Örnek: Hafif gölge ekleme */
+    background-color: #532055;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .card.p-3 h3 {
-    /* Kartın başlığı için özel CSS kuralları */
-    color: #ffffff; /* Örnek: Başlık rengini mavi yapma */
+    color: #ffffff;
 }
 
 .card.p-3 p {
-    /* Kartın paragrafları için özel CSS kuralları */
-    color: #ffffff; /* Örnek: Paragraf rengini gri tonu yapma */
+    color: #ffffff;
 }
 
 .card.p-3 table {
-    /* Kart içindeki tablo için özel CSS kuralları */
-    width: 100%; /* Tabloyu kartın genişliği kadar genişletme */
-    margin-top: 15px; /* Tablonun üst kısmına boşluk bırakma */
-    border-collapse: collapse; /* Hücre sınırlarını kaldırma */
+    width: 100%;
+    margin-top: 15px;
+    border-collapse: collapse;
 }
 
-.card.p-3 th, .card.p-3 td {
-    /* Tablonun başlıkları ve hücreleri için özel CSS kuralları */
-    border: 1px solid #dee2e6; /* Hücre sınırları için ince çizgi ekleme */
-    padding: 8px; /* Hücre içeriğinden kenarlara boşluk bırakma */
-    text-align: left; /* Hücre içeriğini sola hizalama */
+.card.p-3 th,
+.card.p-3 td {
+    border: 1px solid #dee2e6;
+    padding: 8px;
+    text-align: left;
 }
 
 .card.p-3 th {
-    /* Tablonun başlıkları için ekstra CSS kuralları */
-    background-color: #742677; /* Başlık arkaplan rengini mavi yapma */
-    color: #fff; /* Başlık metin rengini beyaz yapma */
+    background-color: #742677;
+    color: #fff;
 }
 
 #calismaSaatleriPaneli {
