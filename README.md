@@ -40,5 +40,14 @@ Kayıt olduktan sonra randevu almak, halihazırdaki randevularını görmek içi
 ## Araçlar
 Back-End kısmı için [spring boot initializr](https://start.spring.io) kullandık ve kodlarımızı Java ile yazdık. Bunun yanısıra Front-End için kullandığımız araçlar aşağıdadır.
 - [Javascript]
-- [HTML] ve
+- [HTML]
 - [CSS]
+- [Bootstrap]
+
+## Ekip
+-Ariq Pratomo
+-Gülüzar Doğan
+-Mehmet Ali Kaba
+
+## Designer
+![Screenshot 2024-01-18 171057](https://github.com/gulddogann/Kuafor-Randevu-Sistemi-/assets/102533722/0da67d37-c055-4ac6-8fec-02324159f492)
